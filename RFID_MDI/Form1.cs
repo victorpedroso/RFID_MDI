@@ -63,5 +63,12 @@ namespace RFID_MDI
             var frm = new VerEntradasSaidas();
             frm.Show();
         }
+
+        private void conexãoSerialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new ConexãoSerial();
+            frm.Show();
+        }
+
     }
 }

@@ -42,18 +42,22 @@
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.conexãoSerialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuarioToolStripMenuItem,
             this.entradassaídasToolStripMenuItem,
-            this.dispositivosToolStripMenuItem});
+            this.dispositivosToolStripMenuItem,
+            this.conexãoSerialToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1200, 35);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -65,34 +69,34 @@
             this.exibirUsuáriosToolStripMenuItem,
             this.tirarFotoToolStripMenuItem});
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.usuarioToolStripMenuItem.Text = "Usuário";
             // 
             // cadastrarUsuárioToolStripMenuItem
             // 
             this.cadastrarUsuárioToolStripMenuItem.Name = "cadastrarUsuárioToolStripMenuItem";
-            this.cadastrarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.cadastrarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(252, 34);
             this.cadastrarUsuárioToolStripMenuItem.Text = "Cadastrar usuário";
             this.cadastrarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarUsuárioToolStripMenuItem_Click);
             // 
             // editarUsuárioToolStripMenuItem
             // 
             this.editarUsuárioToolStripMenuItem.Name = "editarUsuárioToolStripMenuItem";
-            this.editarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.editarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(252, 34);
             this.editarUsuárioToolStripMenuItem.Text = "Editar Usuário";
             this.editarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.editarUsuárioToolStripMenuItem_Click);
             // 
             // exibirUsuáriosToolStripMenuItem
             // 
             this.exibirUsuáriosToolStripMenuItem.Name = "exibirUsuáriosToolStripMenuItem";
-            this.exibirUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.exibirUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(252, 34);
             this.exibirUsuáriosToolStripMenuItem.Text = "Exibir usuários";
             this.exibirUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.exibirUsuáriosToolStripMenuItem_Click);
             // 
             // tirarFotoToolStripMenuItem
             // 
             this.tirarFotoToolStripMenuItem.Name = "tirarFotoToolStripMenuItem";
-            this.tirarFotoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.tirarFotoToolStripMenuItem.Size = new System.Drawing.Size(252, 34);
             this.tirarFotoToolStripMenuItem.Text = "Tirar foto";
             this.tirarFotoToolStripMenuItem.Click += new System.EventHandler(this.tirarFotoToolStripMenuItem_Click);
             // 
@@ -102,20 +106,20 @@
             this.pesquisarToolStripMenuItem,
             this.verTodasToolStripMenuItem});
             this.entradassaídasToolStripMenuItem.Name = "entradassaídasToolStripMenuItem";
-            this.entradassaídasToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.entradassaídasToolStripMenuItem.Size = new System.Drawing.Size(152, 29);
             this.entradassaídasToolStripMenuItem.Text = "Entradas/saídas";
             // 
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.pesquisarToolStripMenuItem.Text = "Pesquisar";
             this.pesquisarToolStripMenuItem.Click += new System.EventHandler(this.pesquisarToolStripMenuItem_Click);
             // 
             // verTodasToolStripMenuItem
             // 
             this.verTodasToolStripMenuItem.Name = "verTodasToolStripMenuItem";
-            this.verTodasToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.verTodasToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.verTodasToolStripMenuItem.Text = "Ver todas";
             this.verTodasToolStripMenuItem.Click += new System.EventHandler(this.verTodasToolStripMenuItem_Click);
             // 
@@ -126,46 +130,55 @@
             this.editarToolStripMenuItem,
             this.excluirToolStripMenuItem});
             this.dispositivosToolStripMenuItem.Name = "dispositivosToolStripMenuItem";
-            this.dispositivosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.dispositivosToolStripMenuItem.Size = new System.Drawing.Size(125, 29);
             this.dispositivosToolStripMenuItem.Text = "Dispositivos";
             // 
             // cadastrarNovoToolStripMenuItem
             // 
             this.cadastrarNovoToolStripMenuItem.Name = "cadastrarNovoToolStripMenuItem";
-            this.cadastrarNovoToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.cadastrarNovoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.cadastrarNovoToolStripMenuItem.Text = "Cadastrar";
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.editarToolStripMenuItem.Text = "Editar";
             // 
             // excluirToolStripMenuItem
             // 
             this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.excluirToolStripMenuItem.Text = "Excluir";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(576, 53);
+            this.button1.Location = new System.Drawing.Point(864, 82);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 67);
+            this.button1.Size = new System.Drawing.Size(278, 103);
             this.button1.TabIndex = 4;
             this.button1.Text = "Liberar acesso";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // conexãoSerialToolStripMenuItem
+            // 
+            this.conexãoSerialToolStripMenuItem.Name = "conexãoSerialToolStripMenuItem";
+            this.conexãoSerialToolStripMenuItem.Size = new System.Drawing.Size(142, 29);
+            this.conexãoSerialToolStripMenuItem.Text = "Conexão serial";
+            this.conexãoSerialToolStripMenuItem.Click += new System.EventHandler(this.conexãoSerialToolStripMenuItem_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Sistema de Controle de Acesso";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -193,6 +206,7 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exibirUsuáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conexãoSerialToolStripMenuItem;
     }
 }
 

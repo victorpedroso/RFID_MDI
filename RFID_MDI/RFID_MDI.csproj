@@ -97,6 +97,12 @@
       <DependentUpon>CadastrarDispositivo.cs</DependentUpon>
     </Compile>
     <Compile Include="ConexaoBD.cs" />
+    <Compile Include="ConexãoSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConexãoSerial.Designer.cs">
+      <DependentUpon>ConexãoSerial.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrarUsuario.resx">
       <DependentUpon>CadastrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConexãoSerial.resx">
+      <DependentUpon>ConexãoSerial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarUsuario.resx">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
