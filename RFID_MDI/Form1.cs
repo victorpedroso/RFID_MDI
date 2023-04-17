@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace RFID_MDI
 {
     public partial class Form1 : Form
     {
+        ConexaoBD conexao = new ConexaoBD();
         public Form1()
         {
             InitializeComponent();
@@ -43,7 +45,16 @@ namespace RFID_MDI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            MySqlConnection conn = conexao.Conectar();
+            MySqlCommand comando = new MySqlCommand("SELECT DataHorario, Nome FROM datasdeacesso", conn);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
+            DataSet ds = new DataSet();
+            DataTable tabelaUsuarios = new DataTable();
+            adaptador.Fill(tabelaUsuarios);
+            //dataGridView1.DataSource = tabelaUsuarios;
+            //dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            //dataGridView1.Columns[dataGridView1.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            conexao.Desconectar(); 
         }
 
         private void exibirUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,8 +77,8 @@ namespace RFID_MDI
 
         private void conexãoSerialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frm = new ConexãoSerial();
-            frm.Show();
+            //var frm = new ConexãoSerial();
+            //frm.Show();
         }
 
     }
