@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO.Ports;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -12,10 +13,10 @@ using System.Windows.Forms;
 
 namespace RFID_MDI
 {
-    public partial class Form1 : Form
+    public partial class Principal : Form
     {
         ConexaoBD conexao = new ConexaoBD();
-        public Form1()
+        public Principal()
         {
             InitializeComponent();
         }
@@ -45,6 +46,7 @@ namespace RFID_MDI
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            serialPort1.Open();
             MySqlConnection conn = conexao.Conectar();
             MySqlCommand comando = new MySqlCommand("SELECT DataHorario, Nome FROM datasdeacesso", conn);
             MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -75,15 +77,37 @@ namespace RFID_MDI
             frm.Show();
         }
 
-        private void conexãoSerialToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //var frm = new ConexãoSerial();
-            //frm.Show();
-        }
-
         private void monitorSerialToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var frm = new serial();
+            frm.Show();
 
+        }
+
+        private void cadastrarNovoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //serialPort1.Write("liberar");
+        }
+
+        private void graficoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new Grafico();
+            frm.Show();
         }
     }
 }

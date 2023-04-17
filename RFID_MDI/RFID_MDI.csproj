@@ -139,6 +139,12 @@
     <Compile Include="SelecionarUsuario.Designer.cs">
       <DependentUpon>SelecionarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="serial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serial.Designer.cs">
+      <DependentUpon>serial.cs</DependentUpon>
+    </Compile>
     <Compile Include="TirarFoto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SelecionarUsuario.resx">
       <DependentUpon>SelecionarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serial.resx">
+      <DependentUpon>serial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TirarFoto.resx">
       <DependentUpon>TirarFoto.cs</DependentUpon>

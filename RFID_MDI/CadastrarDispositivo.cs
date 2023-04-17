@@ -16,5 +16,10 @@ namespace RFID_MDI
         {
             InitializeComponent();
         }
+
+        private void Cadastrar_Dispositivo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(710, 396);
             this.Name = "Cadastrar_Dispositivo";
             this.Text = "Cadastrar Dispositivo";
+            this.Load += new System.EventHandler(this.Cadastrar_Dispositivo_Load);
             this.ResumeLayout(false);
 
         }

@@ -2,7 +2,7 @@
 
 namespace RFID_MDI
 {
-    partial class Form1
+    partial class Principal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -30,6 +30,7 @@ namespace RFID_MDI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,6 +47,8 @@ namespace RFID_MDI
             this.comunicaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monitorSerialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.graficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,7 +110,8 @@ namespace RFID_MDI
             // 
             this.entradassaídasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pesquisarToolStripMenuItem,
-            this.verTodasToolStripMenuItem});
+            this.verTodasToolStripMenuItem,
+            this.graficoToolStripMenuItem});
             this.entradassaídasToolStripMenuItem.Name = "entradassaídasToolStripMenuItem";
             this.entradassaídasToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.entradassaídasToolStripMenuItem.Text = "Entradas/saídas";
@@ -141,18 +145,21 @@ namespace RFID_MDI
             this.cadastrarNovoToolStripMenuItem.Name = "cadastrarNovoToolStripMenuItem";
             this.cadastrarNovoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cadastrarNovoToolStripMenuItem.Text = "Cadastrar";
+            this.cadastrarNovoToolStripMenuItem.Click += new System.EventHandler(this.cadastrarNovoToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // excluirToolStripMenuItem
             // 
             this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
             this.excluirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.excluirToolStripMenuItem.Text = "Excluir";
+            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
             // 
             // comunicaçãoToolStripMenuItem
             // 
@@ -177,6 +184,18 @@ namespace RFID_MDI
             this.button1.TabIndex = 4;
             this.button1.Text = "Liberar acesso";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // serialPort1
+            // 
+            this.serialPort1.PortName = "COM3";
+            // 
+            // graficoToolStripMenuItem
+            // 
+            this.graficoToolStripMenuItem.Name = "graficoToolStripMenuItem";
+            this.graficoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.graficoToolStripMenuItem.Text = "Grafico";
+            this.graficoToolStripMenuItem.Click += new System.EventHandler(this.graficoToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -216,6 +235,8 @@ namespace RFID_MDI
         private System.Windows.Forms.ToolStripMenuItem exibirUsuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comunicaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monitorSerialToolStripMenuItem;
+        private System.IO.Ports.SerialPort serialPort1;
+        private System.Windows.Forms.ToolStripMenuItem graficoToolStripMenuItem;
         //private ISupportInitialize dataGridView1;
     }
 }
