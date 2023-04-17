@@ -81,5 +81,9 @@ namespace RFID_MDI
             //frm.Show();
         }
 
+        private void monitorSerialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
