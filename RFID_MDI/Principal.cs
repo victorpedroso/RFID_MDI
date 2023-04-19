@@ -86,7 +86,9 @@ namespace RFID_MDI
 
         private void cadastrarNovoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            serialPort1.Write("0");
+            var frm = new Cadastrar_Dispositivo();
+            frm.Show();
         }
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,7 +103,7 @@ namespace RFID_MDI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //serialPort1.Write("liberar");
+            serialPort1.Write("1");
         }
 
         private void graficoToolStripMenuItem_Click(object sender, EventArgs e)
