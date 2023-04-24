@@ -1,6 +1,6 @@
 ﻿namespace RFID_MDI
 {
-    partial class Cadastrar_Dispositivo
+    partial class CadastrarDispositivo
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Cadastrar_Dispositivo
+            // CadastrarDispositivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 396);
-            this.Name = "Cadastrar_Dispositivo";
+            this.Name = "CadastrarDispositivo";
             this.Text = "Cadastrar Dispositivo";
             this.Load += new System.EventHandler(this.Cadastrar_Dispositivo_Load);
             this.ResumeLayout(false);
