@@ -28,10 +28,6 @@ namespace RFID_MDI
         {
            
         }
-        private void ExecutarFuncao()
-        {
-            MessageBox.Show("Executei a função");
-        }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
  

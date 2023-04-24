@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace RFID_MDI
 {
-    public partial class PesquisarEntradasSaidas : Form
+    public partial class PesquisarEntradasSaidas : MetroFramework.Forms.MetroForm
     {
         ConexaoBD conexao = new ConexaoBD();
         DataTable tabelaAcesso = new DataTable();
