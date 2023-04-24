@@ -1,6 +1,6 @@
 ﻿namespace RFID_MDI
 {
-    partial class VerEntradasSaidas
+    partial class CadastrarDispositivo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 63);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(632, 375);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // VerEntradasSaidas
+            // CadastrarDispositivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 447);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "VerEntradasSaidas";
-            this.Text = "Ver Entradas e Saidas";
-            this.Load += new System.EventHandler(this.VerEntradasSaidas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ClientSize = new System.Drawing.Size(710, 396);
+            this.Name = "CadastrarDispositivo";
+            this.Text = "Cadastrar Dispositivo";
+            this.Load += new System.EventHandler(this.Cadastrar_Dispositivo_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

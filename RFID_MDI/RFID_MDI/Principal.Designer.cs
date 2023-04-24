@@ -1,4 +1,6 @@
-﻿namespace RFID_MDI
+﻿using System.ComponentModel;
+
+namespace RFID_MDI
 {
     partial class Principal
     {
@@ -37,14 +39,14 @@
             this.entradassaídasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verTodasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dispositivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarNovoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.conexãoSerialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tirarFotoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.comunicaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monitorSerialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtSerial = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,12 +57,11 @@
             this.usuarioToolStripMenuItem,
             this.entradassaídasToolStripMenuItem,
             this.dispositivosToolStripMenuItem,
-            this.conexãoSerialToolStripMenuItem,
-            this.tirarFotoToolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
+            this.comunicaçãoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(760, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(783, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -107,7 +108,8 @@
             // 
             this.entradassaídasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pesquisarToolStripMenuItem,
-            this.verTodasToolStripMenuItem});
+            this.verTodasToolStripMenuItem,
+            this.graficoToolStripMenuItem});
             this.entradassaídasToolStripMenuItem.Name = "entradassaídasToolStripMenuItem";
             this.entradassaídasToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.entradassaídasToolStripMenuItem.Text = "Entradas/saídas";
@@ -126,6 +128,13 @@
             this.verTodasToolStripMenuItem.Text = "Ver todas";
             this.verTodasToolStripMenuItem.Click += new System.EventHandler(this.verTodasToolStripMenuItem_Click);
             // 
+            // graficoToolStripMenuItem
+            // 
+            this.graficoToolStripMenuItem.Name = "graficoToolStripMenuItem";
+            this.graficoToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.graficoToolStripMenuItem.Text = "Grafico";
+            this.graficoToolStripMenuItem.Click += new System.EventHandler(this.graficoToolStripMenuItem_Click);
+            // 
             // dispositivosToolStripMenuItem
             // 
             this.dispositivosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -139,40 +148,42 @@
             // cadastrarNovoToolStripMenuItem
             // 
             this.cadastrarNovoToolStripMenuItem.Name = "cadastrarNovoToolStripMenuItem";
-            this.cadastrarNovoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarNovoToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.cadastrarNovoToolStripMenuItem.Text = "Cadastrar";
             this.cadastrarNovoToolStripMenuItem.Click += new System.EventHandler(this.cadastrarNovoToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // excluirToolStripMenuItem
             // 
             this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.excluirToolStripMenuItem.Text = "Excluir";
+            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
             // 
-            // conexãoSerialToolStripMenuItem
+            // comunicaçãoToolStripMenuItem
             // 
-            this.conexãoSerialToolStripMenuItem.Name = "conexãoSerialToolStripMenuItem";
-            this.conexãoSerialToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.conexãoSerialToolStripMenuItem.Text = "Conexão serial";
-            this.conexãoSerialToolStripMenuItem.Click += new System.EventHandler(this.conexãoSerialToolStripMenuItem_Click);
+            this.comunicaçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.monitorSerialToolStripMenuItem});
+            this.comunicaçãoToolStripMenuItem.Name = "comunicaçãoToolStripMenuItem";
+            this.comunicaçãoToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.comunicaçãoToolStripMenuItem.Text = "Comunicação";
             // 
-            // tirarFotoToolStripMenuItem1
+            // monitorSerialToolStripMenuItem
             // 
-            this.tirarFotoToolStripMenuItem1.Name = "tirarFotoToolStripMenuItem1";
-            this.tirarFotoToolStripMenuItem1.Size = new System.Drawing.Size(67, 22);
-            this.tirarFotoToolStripMenuItem1.Text = "Tirar foto";
-            this.tirarFotoToolStripMenuItem1.Click += new System.EventHandler(this.tirarFotoToolStripMenuItem1_Click);
+            this.monitorSerialToolStripMenuItem.Name = "monitorSerialToolStripMenuItem";
+            this.monitorSerialToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.monitorSerialToolStripMenuItem.Text = "Monitor serial";
+            this.monitorSerialToolStripMenuItem.Click += new System.EventHandler(this.monitorSerialToolStripMenuItem_Click);
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(569, 114);
+            this.button1.Location = new System.Drawing.Point(559, 122);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(185, 67);
             this.button1.TabIndex = 4;
@@ -180,31 +191,18 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // txtSerial
-            // 
-            this.txtSerial.Location = new System.Drawing.Point(46, 114);
-            this.txtSerial.Multiline = true;
-            this.txtSerial.Name = "txtSerial";
-            this.txtSerial.Size = new System.Drawing.Size(392, 373);
-            this.txtSerial.TabIndex = 10;
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 510);
-            this.Controls.Add(this.txtSerial);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(783, 553);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Principal";
             this.Text = "Sistema de Controle de Acesso";
-            this.TransparencyKey = System.Drawing.Color.Empty;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Activated += new System.EventHandler(this.Form1_Activated);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -229,9 +227,10 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exibirUsuáriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem conexãoSerialToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tirarFotoToolStripMenuItem1;
-        private System.Windows.Forms.TextBox txtSerial;
+        private System.Windows.Forms.ToolStripMenuItem comunicaçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem monitorSerialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem graficoToolStripMenuItem;
+        //private ISupportInitialize dataGridView1;
     }
 }
 

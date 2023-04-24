@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace RFID_MDI
 {
-    public partial class CadastrarUsuario : MetroFramework.Forms.MetroForm
+    public partial class CadastrarUsuario : Form
     {
         ConexaoBD conexao = new ConexaoBD();
         public CadastrarUsuario()

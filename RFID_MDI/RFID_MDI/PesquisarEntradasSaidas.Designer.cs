@@ -38,13 +38,13 @@
             // 
             // calendario
             // 
-            this.calendario.Location = new System.Drawing.Point(60, 80);
+            this.calendario.Location = new System.Drawing.Point(18, 18);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 0;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(101, 358);
+            this.btnPesquisar.Location = new System.Drawing.Point(318, 120);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(153, 45);
             this.btnPesquisar.TabIndex = 1;
@@ -55,15 +55,15 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(351, 55);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 192);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(440, 348);
+            this.dataGridView1.Size = new System.Drawing.Size(770, 246);
             this.dataGridView1.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 271);
+            this.label1.Location = new System.Drawing.Point(345, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 4;
@@ -71,7 +71,7 @@
             // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(116, 299);
+            this.txtData.Location = new System.Drawing.Point(337, 75);
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(112, 20);

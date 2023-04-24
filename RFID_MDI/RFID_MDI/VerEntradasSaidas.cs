@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace RFID_MDI
 {
-    public partial class VerEntradasSaidas : MetroFramework.Forms.MetroForm
+    public partial class VerEntradasSaidas : Form
     {
         ConexaoBD conexao = new ConexaoBD();
         public VerEntradasSaidas()
@@ -31,6 +31,11 @@ namespace RFID_MDI
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.Columns[dataGridView1.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             conexao.Desconectar();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

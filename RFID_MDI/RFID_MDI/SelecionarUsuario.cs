@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace RFID_MDI
 {
-    public partial class SelecionarUsuario : MetroFramework.Forms.MetroForm
+    public partial class SelecionarUsuario : Form
     {
         MySqlConnection Conexao = new MySqlConnection("Server=localhost;Database=sistemacontroleacesso;Uid=root;Pwd=;");
         public SelecionarUsuario()
