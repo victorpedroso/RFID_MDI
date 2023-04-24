@@ -30,7 +30,6 @@ namespace RFID_MDI
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +39,7 @@ namespace RFID_MDI
             this.entradassaídasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verTodasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dispositivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarNovoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,8 +47,6 @@ namespace RFID_MDI
             this.comunicaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monitorSerialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
-            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.graficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,28 +79,28 @@ namespace RFID_MDI
             // cadastrarUsuárioToolStripMenuItem
             // 
             this.cadastrarUsuárioToolStripMenuItem.Name = "cadastrarUsuárioToolStripMenuItem";
-            this.cadastrarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.cadastrarUsuárioToolStripMenuItem.Text = "Cadastrar usuário";
             this.cadastrarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarUsuárioToolStripMenuItem_Click);
             // 
             // editarUsuárioToolStripMenuItem
             // 
             this.editarUsuárioToolStripMenuItem.Name = "editarUsuárioToolStripMenuItem";
-            this.editarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.editarUsuárioToolStripMenuItem.Text = "Editar Usuário";
             this.editarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.editarUsuárioToolStripMenuItem_Click);
             // 
             // exibirUsuáriosToolStripMenuItem
             // 
             this.exibirUsuáriosToolStripMenuItem.Name = "exibirUsuáriosToolStripMenuItem";
-            this.exibirUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exibirUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.exibirUsuáriosToolStripMenuItem.Text = "Exibir usuários";
             this.exibirUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.exibirUsuáriosToolStripMenuItem_Click);
             // 
             // tirarFotoToolStripMenuItem
             // 
             this.tirarFotoToolStripMenuItem.Name = "tirarFotoToolStripMenuItem";
-            this.tirarFotoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tirarFotoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.tirarFotoToolStripMenuItem.Text = "Tirar foto";
             this.tirarFotoToolStripMenuItem.Click += new System.EventHandler(this.tirarFotoToolStripMenuItem_Click);
             // 
@@ -119,16 +117,23 @@ namespace RFID_MDI
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.pesquisarToolStripMenuItem.Text = "Pesquisar";
             this.pesquisarToolStripMenuItem.Click += new System.EventHandler(this.pesquisarToolStripMenuItem_Click);
             // 
             // verTodasToolStripMenuItem
             // 
             this.verTodasToolStripMenuItem.Name = "verTodasToolStripMenuItem";
-            this.verTodasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verTodasToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.verTodasToolStripMenuItem.Text = "Ver todas";
             this.verTodasToolStripMenuItem.Click += new System.EventHandler(this.verTodasToolStripMenuItem_Click);
+            // 
+            // graficoToolStripMenuItem
+            // 
+            this.graficoToolStripMenuItem.Name = "graficoToolStripMenuItem";
+            this.graficoToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.graficoToolStripMenuItem.Text = "Grafico";
+            this.graficoToolStripMenuItem.Click += new System.EventHandler(this.graficoToolStripMenuItem_Click);
             // 
             // dispositivosToolStripMenuItem
             // 
@@ -143,21 +148,21 @@ namespace RFID_MDI
             // cadastrarNovoToolStripMenuItem
             // 
             this.cadastrarNovoToolStripMenuItem.Name = "cadastrarNovoToolStripMenuItem";
-            this.cadastrarNovoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarNovoToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.cadastrarNovoToolStripMenuItem.Text = "Cadastrar";
             this.cadastrarNovoToolStripMenuItem.Click += new System.EventHandler(this.cadastrarNovoToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // excluirToolStripMenuItem
             // 
             this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.excluirToolStripMenuItem.Text = "Excluir";
             this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
             // 
@@ -172,7 +177,7 @@ namespace RFID_MDI
             // monitorSerialToolStripMenuItem
             // 
             this.monitorSerialToolStripMenuItem.Name = "monitorSerialToolStripMenuItem";
-            this.monitorSerialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.monitorSerialToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.monitorSerialToolStripMenuItem.Text = "Monitor serial";
             this.monitorSerialToolStripMenuItem.Click += new System.EventHandler(this.monitorSerialToolStripMenuItem_Click);
             // 
@@ -186,28 +191,17 @@ namespace RFID_MDI
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // serialPort1
-            // 
-            this.serialPort1.PortName = "COM3";
-            // 
-            // graficoToolStripMenuItem
-            // 
-            this.graficoToolStripMenuItem.Name = "graficoToolStripMenuItem";
-            this.graficoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.graficoToolStripMenuItem.Text = "Grafico";
-            this.graficoToolStripMenuItem.Click += new System.EventHandler(this.graficoToolStripMenuItem_Click);
-            // 
-            // Form1
+            // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(783, 399);
+            this.ClientSize = new System.Drawing.Size(783, 553);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "Principal";
             this.Text = "Sistema de Controle de Acesso";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -235,7 +229,6 @@ namespace RFID_MDI
         private System.Windows.Forms.ToolStripMenuItem exibirUsuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comunicaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monitorSerialToolStripMenuItem;
-        private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.ToolStripMenuItem graficoToolStripMenuItem;
         //private ISupportInitialize dataGridView1;
     }

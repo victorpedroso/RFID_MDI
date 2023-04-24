@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RFID_MDI
 {
-    public partial class Cadastrar_Dispositivo : Form
+    public partial class CadastrarDispositivo : Form
     {
-        public Cadastrar_Dispositivo()
+        public CadastrarDispositivo()
         {
             InitializeComponent();
         }
