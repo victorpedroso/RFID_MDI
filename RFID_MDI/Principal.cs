@@ -135,7 +135,7 @@ namespace RFID_MDI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //serialPort1.Write("liberar");
+            serialPort1.Write("1");
         }
 
         private void graficoToolStripMenuItem_Click(object sender, EventArgs e)
